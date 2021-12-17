@@ -2,10 +2,16 @@
 <section class="section">
   <div class="columns">
     <div class="column">
+      <h1 class="title has-text-centered">
+        เพิ่มรายชื่อห้องปฏิบัติการ
+      </h1>
       <b-field>
         <b-input v-model="labName" placeholder="Laboratory Name"></b-input>
       </b-field>
-      <b-button @click="saveMember" type="is-success" :loading="isLoading">Submit</b-button>
+      <div class="buttons is-centered">
+        <b-button @click="saveMember" type="is-success" :loading="isLoading">Submit</b-button>
+        <b-button @click="$router.back()" type="is-light">Back</b-button>
+      </div>
     </div>
   </div>
 </section>
