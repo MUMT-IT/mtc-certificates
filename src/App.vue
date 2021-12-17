@@ -1,23 +1,6 @@
 <template>
   <div id="app">
-    <div class="columns">
-      <div class="column is-one-third is-offset-4">
-        <h1 class="title has-text-info has-text-centered is-light">
-          ระบบพิมพ์ใบประกาศนียบัตรเข้าร่วมงาน LA Forum 2021
-        </h1>
-        <h1 class="subtitle has-text-centered has-text-danger">
-          สภาเทคนิคการแพทย์
-        </h1>
-        <b-field label="กรุณากรอกหมายเลข ท.น.">
-          <b-input v-model="license"></b-input>
-        </b-field>
-        <b-field>
-          <b-button type="is-primary" @click="generate">
-            Create
-          </b-button>
-        </b-field>
-      </div>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -38,12 +21,6 @@ pdfMake.fonts = {
 export default {
   name: 'App',
   components: {
-  },
-  data () {
-    return {
-      fullname: 'ลิขิต ปรียานนท์',
-      license: null,
-    }
   },
   methods: {
     generate () {

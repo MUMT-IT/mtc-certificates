@@ -10,6 +10,7 @@
   "dependencies": {
     "buefy": "^0.9.13",
     "core-js": "^3.6.5",
+    "firebase": "^9.6.1",
     "pdfmake": "^0.2.4",
     "vue": "^2.6.11"
   },
